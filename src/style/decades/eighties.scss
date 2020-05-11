@@ -1,0 +1,24 @@
+.eighties {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 1.0em;
+
+    .eighties-grossing {
+        display: grid;
+        justify-self: center;
+        padding-left: 15px;
+        gap: 10.0px;
+    }
+    .eighties-score {
+        display: grid;
+        justify-self: start;
+    }
+    .eighties-favorite {
+        display: grid;
+        justify-self: center;
+        padding-left: 15px; 
+        gap: 10.0px;
+    }
+}

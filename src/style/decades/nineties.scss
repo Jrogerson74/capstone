@@ -1,0 +1,29 @@
+.nineties {
+    display: flex;
+    //grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 1.0em;
+
+    .nineties-grossing {
+        display: grid;
+        justify-self: center;
+        align-self: stretch;
+        padding-left: 15px;
+        gap: 10.0px;
+    }
+    .nineties-score {
+        display: grid;
+        justify-self: center;
+        align-self: stretch;
+        padding-left: 15px;
+        gap: 10.0px;
+    }
+    .nineties-favorite {
+        display: grid;
+        justify-self: center;
+        align-self: stretch;
+        padding-left: 15px; 
+        gap: 10.0px;
+    }
+}

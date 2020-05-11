@@ -1,0 +1,28 @@
+.twenty-tens {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 1.0em;
+
+    .twenty-tens-grossing {
+        display: grid;
+        justify-self: center;
+        align-self: stretch;
+        padding-left: 15px;
+        gap: 10.0px;
+    }
+    .twenty-tens-score {
+        display: grid;
+        justify-self: center;
+        align-self: stretch;
+        padding-left: 15px;
+        gap: 10.0px;
+    }
+    .twenty-tens-favorite {
+        display: grid;
+        justify-self: center;
+        align-self: stretch;
+        padding-left: 15px; 
+        gap: 10.0px;
+    }
+}

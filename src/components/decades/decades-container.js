@@ -7,14 +7,11 @@ export default class DecadesContainer extends Component {
         super();
 
         this.state = {
-            data:[
-                {title: "1980", category: "Eighties"},
-                {title: "1981", category: "Eighties"},
-                {title: "1982", category: "Eighties"},
-                {title: "1983", category: "Eighties"},
-                {title: "1990", category:"Nineties"},
-                {title: "2001", category:"Two-Thousands"},
-                {title: "2012", category:"Twenty-Tens"}
+            data:[                
+                //{title: "Welcome to horrified, a fan's website. This website will show the top grossing horror movie of each year of the last four decades.", category: "Horrified"}
+                //{title: "1990", category:"Nineties"},
+                //{title: "2000", category:"Two-Thousands"},
+                //{title: "2010", category:"Twenty-Tens"}
             ]
         };
 
@@ -37,14 +34,10 @@ export default class DecadesContainer extends Component {
     
     render() {
         return (
-            <div>
-               <h2>{this.state.pagetitle}</h2> 
+            <div className='decade-container'>
+                <h2>{this.state.pagetitle}</h2> 
 
-               <button onClick={() => this.handleFilter('Eighties')}>Eighties</button>
-               <button onClick={() => this.handleFilter('Nineties')}>Nineties</button>
-               <button onClick={() => this.handleFilter('Two-Thousands')}>Two-Thousands</button>
-               <button onClick={() => this.handleFilter('Twenty-Tens')}>Twenty-Tens</button>
-
+                
                {this.decades()}
 
             </div>

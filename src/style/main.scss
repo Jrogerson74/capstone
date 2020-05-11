@@ -1,6 +1,3 @@
-html {
-    font-size: 62.5%;
-}
 
 *,
 *::after,
@@ -10,18 +7,9 @@ html {
     box-sizing: inherit;
 }
 
-// body {
-//     overflow-x: hidden;
-//     font-weight: normal;
-// 
-//     -webkit-font-smoothing: antialiased;
-//     -moz-osx-font-smoothing: grayscale;
-//     text-rendering: optimizeLegibility;
-//     -webkit-tap-highlight-color: transparent;
-// }
-
-.app {
-    margin-top: 2rem;
-    display: grid;
-    justify-items: center;
-}
+@import 'app';
+@import 'headernav';
+@import './decades/eighties.scss';
+@import './decades/nineties.scss';
+@import './decades/two-thousand.scss';
+@import './decades/twenty-tens.scss';

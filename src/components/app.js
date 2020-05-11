@@ -5,13 +5,14 @@ import {
  Route
 } from 'react-router-dom';
 
-import DecadesContainer from './decades/decades-container';
 import NavigationContainer from './navigation/navigation-container';
+import Header from './headernav/header';
 import Home from './pages/home';
 import Eighties from './pages/eighties';
 import Nineties from './pages/nineties';
 import TwoThousands from './pages/twoThousands';
 import TwentyTens from './pages/twentyTens';
+import NoMatch from "./pages/no-match";
 
 export default class App extends Component {
   render() {
@@ -19,7 +20,7 @@ export default class App extends Component {
       <div className='app'>     
         <Router>
           <div>
-            <h1>HORRIFIED</h1>
+            <Header />
             <NavigationContainer />
 
             <Switch>
@@ -28,11 +29,11 @@ export default class App extends Component {
               <Route path="/the-nineties" component={Nineties} /> 
               <Route path="/two-thousands" component={TwoThousands} />
               <Route path="/twenty-tens" component={TwentyTens}/>
+              <Route component={NoMatch}/>
             </Switch>
           </div>
         </Router>
 
-        <DecadesContainer />
       </div>
     );
   }

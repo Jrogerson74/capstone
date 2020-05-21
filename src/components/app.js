@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import {
- BrowserRouter as Router,
- Switch,
- Route
-} from 'react-router-dom';
+import axios from 'axios';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import NavigationContainer from './navigation/navigation-container';
 import Header from './headernav/header';
@@ -15,6 +12,18 @@ import TwentyTens from './pages/twentyTens';
 import NoMatch from "./pages/no-match";
 
 export default class App extends Component {
+  getDecadeItems() {
+    axios
+      .get('/user?ID=12345')
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
+      .finally(function () {
+      });
+  }
   render() {
     return (
       <div className='app'>     
